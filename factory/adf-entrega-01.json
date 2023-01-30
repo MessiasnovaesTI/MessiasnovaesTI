@@ -1,0 +1,9 @@
+{
+	"name": "adf-entrega-01",
+	"location": "eastus",
+	"identity": {
+		"type": "SystemAssigned",
+		"principalId": "9a51b70d-50d4-43e2-b56b-b33469b77f92",
+		"tenantId": "cf36141c-ddd7-45a7-b073-111f66d0b30c"
+	}
+}

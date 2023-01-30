@@ -1,0 +1,19 @@
+{
+	"name": "BinaryGeneric",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "AzureDataLakeStorage1Aula",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "Binary",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobFSLocation",
+				"folderPath": "sales",
+				"fileSystem": "landing"
+			}
+		}
+	},
+	"type": "Microsoft.DataFactory/factories/datasets"
+}
