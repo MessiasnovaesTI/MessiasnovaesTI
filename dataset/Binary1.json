@@ -12,6 +12,10 @@
 				"type": "AzureBlobFSLocation",
 				"fileName": "5m-Sales-Records.zip",
 				"fileSystem": "landing"
+			},
+			"compression": {
+				"type": "ZipDeflate",
+				"level": "Fastest"
 			}
 		}
 	}
