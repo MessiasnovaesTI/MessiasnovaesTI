@@ -5,12 +5,28 @@
 			"referenceName": "Aula_AzureSqlDatabase",
 			"type": "LinkedServiceReference"
 		},
+		"parameters": {
+			"DS_Name_Table": {
+				"type": "string",
+				"defaultValue": "Product"
+			},
+			"DS_Schema_Table": {
+				"type": "string",
+				"defaultValue": "SalesLT"
+			}
+		},
 		"annotations": [],
 		"type": "AzureSqlTable",
 		"schema": [],
 		"typeProperties": {
-			"schema": "SalesLT",
-			"table": "Product"
+			"schema": {
+				"value": "@dataset().DS_Schema_Table",
+				"type": "Expression"
+			},
+			"table": {
+				"value": "@dataset().DS_Name_Table",
+				"type": "Expression"
+			}
 		}
 	}
 }
