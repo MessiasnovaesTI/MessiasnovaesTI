@@ -11,7 +11,7 @@
 			"location": {
 				"type": "AzureBlobFSLocation",
 				"fileName": "5m_Sales_Records.parquet",
-				"folderPath": "sales",
+				"folderPath": "AdventureWorks/SalesBike",
 				"fileSystem": "landing"
 			},
 			"compressionCodec": "snappy"
