@@ -42,7 +42,17 @@
 				"inputs": [
 					{
 						"referenceName": "AzureSqlTable1",
-						"type": "DatasetReference"
+						"type": "DatasetReference",
+						"parameters": {
+							"DS_Name_Table": {
+								"value": "@pipeline().parameters.Schema_Par",
+								"type": "Expression"
+							},
+							"DS_Schema_Table": {
+								"value": "@pipeline().parameters.Table_Name_Par",
+								"type": "Expression"
+							}
+						}
 					}
 				],
 				"outputs": [
