@@ -69,6 +69,12 @@
 			},
 			"Table_Name_Par": {
 				"type": "string"
+			},
+			"Conteiner_Par": {
+				"type": "string"
+			},
+			"Directory_Par": {
+				"type": "string"
 			}
 		},
 		"annotations": []
