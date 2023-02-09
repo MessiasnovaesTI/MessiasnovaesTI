@@ -101,6 +101,20 @@
 						}
 					}
 				}
+			},
+			{
+				"name": "Set variable1",
+				"type": "SetVariable",
+				"dependsOn": [],
+				"userProperties": [],
+				"typeProperties": {
+					"variableName": "ListaDeTabelas",
+					"value": [
+						"Customer",
+						"ProductModel",
+						"ProductDescription"
+					]
+				}
 			}
 		],
 		"parameters": {
@@ -119,6 +133,11 @@
 			"Directory_Par": {
 				"type": "string",
 				"defaultValue": "adventureworks/incremental/Product"
+			}
+		},
+		"variables": {
+			"ListaDeTabelas": {
+				"type": "Array"
 			}
 		},
 		"annotations": []
