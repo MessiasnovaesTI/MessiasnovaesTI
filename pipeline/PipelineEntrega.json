@@ -17,6 +17,7 @@
 				"typeProperties": {
 					"source": {
 						"type": "AzureSqlSource",
+						"sqlReaderQuery": "select * from @{pipeline().parameters.Schema_Par}.@{pipeline().parameters.Table_Name_Par}",
 						"queryTimeout": "02:00:00",
 						"partitionOption": "None"
 					},
@@ -65,16 +66,20 @@
 		],
 		"parameters": {
 			"Schema_Par": {
-				"type": "string"
+				"type": "string",
+				"defaultValue": "SalesLT"
 			},
 			"Table_Name_Par": {
-				"type": "string"
+				"type": "string",
+				"defaultValue": "Product"
 			},
 			"Conteiner_Par": {
-				"type": "string"
+				"type": "string",
+				"defaultValue": "landing"
 			},
 			"Directory_Par": {
-				"type": "string"
+				"type": "string",
+				"defaultValue": "adventureworks/incremental/Product"
 			}
 		},
 		"annotations": []
